@@ -1,0 +1,28 @@
+# ETL Toll Data Pipeline with Apache Airflow
+
+This project demonstrates an ETL (Extract, Transform, Load) pipeline implemented using Apache Airflow. The pipeline extracts toll data from various sources, transforms it, and consolidates it into a single dataset. The project is designed for educational purposes and showcases the capabilities of Apache Airflow in orchestrating complex workflows.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Setup Instructions](#setup-instructions)
+- [DAG Configuration](#dag-configuration)
+- [Task Details](#task-details)
+- [Execution Instructions](#execution-instructions)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Overview
+
+This ETL pipeline consists of the following key tasks:
+1. Unzip the downloaded toll data.
+2. Extract relevant fields from CSV, TSV, and fixed-width files.
+3. Consolidate extracted data into a single CSV file.
+4. Transform data by modifying specific fields.
+
+## Setup Instructions
+
+1. **Start Apache Airflow**: Ensure Apache Airflow is running in your environment.
+2. **Create Directory Structure**:
+   ```bash
+   sudo mkdir -p /home/project/airflow/dags/finalassignment/staging
